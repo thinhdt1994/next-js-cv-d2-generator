@@ -1,0 +1,8 @@
+.title {
+    text-align: center;
+}
+
+.cvList {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}

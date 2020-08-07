@@ -1,0 +1,8 @@
+.title {
+    text-align: center;
+}
+
+.templateList {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
