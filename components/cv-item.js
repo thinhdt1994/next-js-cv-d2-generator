@@ -17,17 +17,16 @@ function CVItem(props) {
     }
 
     function deleteCV(cvId, currentCv, setCurrentCv, cvs, setCvs) {
-        
-        if (currentCv !== null) {
-            if (cvId === currentCv.id) {
-                setCurrentCv(null);
-            }
-        }
         for(let index in cvs) {
             let cv = cvs[index];
             if (cv.id === cvId) {
-                setCvs(cvs.splice(index, 1));
+                setCvs(cvs.filter((value, key) => key != index));
                 break;
+            }
+        }
+        if (currentCv !== null) {
+            if (cvId === currentCv.id) {
+                setCurrentCv(null);
             }
         }
     }

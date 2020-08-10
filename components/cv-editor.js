@@ -52,14 +52,14 @@ function CVEditor(props) {
             // always executed
         });
     }
-
+    
     function saveCV(currentCv, captureRef, cvs, setCvs) {
         let element = captureRef.current;
         let editedCv = Object.assign({}, currentCv, {content: element.innerHTML});
         for(let index in cvs) {
             let cv = cvs[index];
             if (cv.id === currentCv.id) {
-                setCvs(cvs.splice(index, 1).concat(editedCv));
+                setCvs(cvs.filter((value, key) => key != index).concat(editedCv)); 
                 return;
             }
         }
