@@ -4,8 +4,7 @@ import { Col, Button } from 'antd';
 import styles from '../styles/cv-item.css';
 
 function CVItem(props) {
-    let rootUrl = process.env.REACT_APP_ROOT_URL || 'http://localhost:3001';
-    let src = rootUrl + '/' + props.cv.thumbnail;
+    let src = process.env.NEXT_ROOT_URL + '/' + props.cv.thumbnail;
 
     function editCV(cvId, currentCv, setCurrentCv, cvs) {
         for(let cv of cvs) {

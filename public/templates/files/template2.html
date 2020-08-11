@@ -1,0 +1,208 @@
+<style>
+[contenteditable=true]:empty:before{
+    content: attr(placeholder);
+    pointer-events: none;
+    display: inline-block; /* For Firefox */
+    
+}
+
+*[contenteditable=true] {
+    border: 1px dashed transparent;
+}
+
+*[contenteditable=true]:hover {
+    border: 1px dashed #AAA;
+}
+
+.dark-bg {
+    background-color: #37474F;
+}
+
+.cv__title {
+    background-color: #263238;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.cv__avatar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    height: 170px;
+    background-color: white;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.cv__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cv__text {
+    padding: 8px;
+}
+
+.cv__text--large {
+    font-size: 25px;
+}
+
+.cv__text--medium {
+    font-size: 20px;
+}
+
+
+.cv__text--small {
+    font-size: 15px;
+}
+
+.cv__text--white {
+    color: white;
+}
+
+.cv__text--dark {
+    color: #263238;
+}
+
+.cv__text--purple {
+    color: #414142;
+}
+
+.cv__text--grey {
+    color: #bbb;
+}
+
+.cv__text--border-bottom {
+    border-bottom: 1px solid black;
+}
+
+.cv__contact {
+    background-color: #37474F;
+    padding-bottom: 32px;
+}
+
+.cv__contact-detail {
+    padding: 8px;
+}
+
+.cv__icon {
+    position: relative;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.cv__icon--white {
+    color: white;
+    background-color: #7C7A79;
+}
+
+.cv__icon--black {
+    color: #FFFFFF;
+    background-color: #263238;
+}
+
+.cv__icon--small {
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+}
+
+.cv__icon--large {
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.cv__icon > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cv__block-info {
+    padding-bottom: 32px;
+}
+
+.cv__block-info--dark {
+    background-color: #37474F;
+}
+
+.cv__block-info--light {
+    background-color: white;
+}
+</style>
+
+<!-- Name -->
+<h4 class="cv__text cv__text--dark cv__text--large text-center" contenteditable="true" placeholder="Họ và tên">Đỗ Tiến Thịnh</h4>
+<p class="cv__text cv__text--dark font-italic text-center" contenteditable="true" placeholder="Ví trị ứng tuyển">Vị trí ứng tuyển : CEO</p>
+
+<!-- Address -->
+<p class="cv__text cv__text--dark cv__title--small text-center" contenteditable="true" placeholder="Địa chỉ">Thái Thụy - Thái Bình</span>
+
+<!-- Contact -->
+<div class="text-center">
+  <!-- Phone -->
+  <i class="fa fa-phone"></i>
+  <span class="cv__text cv__text--dark cv__title--small" contenteditable="true" placeholder="Số điện thoại">0982293263</span>
+  
+    <!-- Mail -->
+    <i class="fa fa-envelope-square"></i>
+    <span class="cv__text cv__text--dark cv__title--small" contenteditable="true" placeholder="Email">thinhdt@gmail.com</span>
+  
+  <!-- Website -->
+    <i class="fa fa-link"></i>
+    <span class="cv__text cv__text--dark cv__title--small" contenteditable="true" placeholder="Website">https://thinhdt.com</span>
+  </div>
+</div>
+
+ <!-- Education -->
+ <div class="cv__block-info">
+  <h3 class="cv__text cv__text--dark cv__text--large font-weight-bold cv__text--border-bottom" contenteditable="true" placeholder="Tiêu đề">HỌC VẤN</h3>
+  <p class="cv__text cv__text--dark cv__text--small my-2 font-weight-bold" contenteditable="true" placeholder="Tiêu đề">Đại học giao thông vận tải</p>
+  <p class="cv__text cv__text--purple cv__title--small my-0 py-1" contenteditable="true" placeholder="Nội dung">Chuyên ngành xây dựng đường bộ</p>
+  <p class="cv__text cv__text--purple cv__title--small my-0 py-1" contenteditable="true" placeholder="Nội dung">Tốt nghiệp loại Giỏi, điểm trung bình 8.0</p>
+ </div>
+
+  <!-- Experience -->
+  <div class="cv__block-info">
+    <h3 class="cv__text cv__text--dark cv__text--large font-weight-bold cv__text--border-bottom" contenteditable="true" placeholder="Tiêu đề">KINH NGHIỆM LÀM VIỆC</h3>
+    <p class="cv__text cv__text--dark cv__text--small my-2 font-weight-bold" contenteditable="true" placeholder="Tiêu đề">Công ty Rikkeisoft</p>
+    <p class="cv__text cv__text--purple cv__title--small my-0 py-1" contenteditable="true" placeholder="Nội dung">Lập trình viên</p>
+    <p class="cv__text cv__text--dark cv__text--small my-2 font-weight-bold" contenteditable="true" placeholder="Tiêu đề">Công ty Iria</p>
+    <p class="cv__text cv__text--purple cv__title--small my-0 py-1" contenteditable="true" placeholder="Nội dung">CEO Founder</p>
+  </div>
+
+   <!-- Activity -->
+   <div class="cv__block-info">
+      <h3 class="cv__text cv__text--dark cv__text--large font-weight-bold cv__text--border-bottom" contenteditable="true" placeholder="Tiêu đề">HOẠT ĐỘNG</h3>
+      <p class="cv__text cv__text--dark cv__text--small my-2 font-weight-bold" contenteditable="true" placeholder="Tiêu đề">NHÀ TỪ THIỆN</p>
+      <p class="cv__text cv__text--purple cv__title--small my-0 py-1" contenteditable="true" placeholder="Nội dung">Chủ tịch hội từ thiện</p>
+      <p class="cv__text cv__text--dark cv__text--small my-2 font-weight-bold" contenteditable="true" placeholder="Tiêu đề">BẢO VỆ MÔI TRƯỜNG</p>
+      <p class="cv__text cv__text--purple cv__title--small my-0 py-1" contenteditable="true" placeholder="Nội dung">Chủ tịch tập đoàn công nghệ môi trường</p>
+    </div>
+  </div>
+
+   <!-- Certification -->
+   <div class="cv__block-info cv__block-info--light">
+    <h3 class="cv__text cv__text--dark cv__text--large font-weight-bold cv__text--border-bottom" contenteditable="true" placeholder="Tiêu đề">CHỨNG CHỈ</h3>
+    <p class="cv__text cv__text--purple cv__title--small mt-2" contenteditable="true" placeholder="Nội dung">ISO-9001-2020</p>
+  </div>  
+
+   <!-- Award -->
+   <div class="cv__block-info">
+    <h3 class="cv__text cv__text--dark cv__text--large font-weight-bold cv__text--border-bottom" contenteditable="true" placeholder="Tiêu đề">GIẢI THƯỞNG</h3>
+    <p class="cv__text cv__text--purple cv__title--small mt-2" contenteditable="true" placeholder="Nội dung">Nobel hòa bình</p>
+  </div>  
+
+  <!-- Reference -->
+  <div class="cv__block-info">
+    <h3 class="cv__text cv__text--dark cv__text--large font-weight-bold cv__text--border-bottom" contenteditable="true" placeholder="Tiêu đề">NGƯỜI THAM CHIẾU</h3>
+      <p class="cv__text cv__text--purple cv__title--small mt-2" contenteditable="true" placeholder="Nội dung">Jay Abraham</p>
+      <p class="cv__text cv__text--purple cv__title--small mt-2" contenteditable="true" placeholder="Nội dung">Adam Khoo</p>
+  </div>  

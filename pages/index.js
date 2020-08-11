@@ -12,6 +12,7 @@ import { fetchData } from '../lib/fetch-data';
 
 export default function Home(props) {
   // const templates = props.templates;
+  // console.log(templates);
   const templates = [
       {
       "id": 1,
@@ -58,7 +59,7 @@ export default function Home(props) {
 
 export async function getStaticProps() {
   // Get templates from server
-  let templateUrl = process.env.REACT_APP_TEMPLATES_URL || 'http://localhost:3001/templates';
+  let templateUrl = process.env.NEXT_TEMPLATES_URL;
   let defaultData = [];
   let templates = fetchData(templateUrl, defaultData);
   // The value of the `props` key will be
